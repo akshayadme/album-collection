@@ -1,13 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Roboto Slab', serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* navbar styling */
+.navbar{
+  background-color: #ff8fab;
+  height: 50px;
+  display: flex;
+  padding:0 30px;
+  align-items: center;
+  color: #fff;
+}
+
+.album-wrapper {
+  padding: 20px;
+}
+
+.album-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.input-sec{
+  margin-top: 30px;
+  background-color: #fff !important;
+}
+
+/* text box style */
+.input-sec input{
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  transition: .5s;
+  background-color: #fff !important;
+}
+
+.input-sec input[type="text"]{
+  width: 300px;
+  height: 48px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 25px 0 0 25px;
+  padding :0 20px; 
+}
+
+/* input button style */
+.input-sec button{
+  position: relative;
+  left: -5px;
+  height: 50px;
+  border: 1px solid #ccc;
+  border-radius: 0px 25px 25px 0px;
+  padding :0 25px; 
+  background-color: #ff8fab;
+  cursor: pointer;
+  transition: .5s;
+  color: #fff;
+}
+
+.input-sec button:hover{
+  background-color: #fb6f92;
+}
+
+.input-sec button .icon{
+  font-size: 20px;
+  color: #fff;
+}
+
+
+/* Album card section */
+
+.album-card{
+  display: inline-grid;
+  grid-gap: 30px;
+  grid-template-columns: 250px 250px 250px 250px;
+  margin-top: 40px;
+}
+
+/* card section */
+.card{
+  padding: 20px;
+  background-color: #e7e6f7;
+  border-radius: 10px;
+  box-shadow:2px 2px 10px 3px rgba(0, 0, 0, 0.2);
+}
+
+.card .album-button{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.card .album-button button {
+  margin: 0 10px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.card .title textarea{
+  width: 100%;
+  height: 70px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
 }
