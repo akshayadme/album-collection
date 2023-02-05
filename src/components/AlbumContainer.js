@@ -50,11 +50,11 @@ const AlbumContainer = () => {
 
     setAlbumList([data, ...albumList]);
 
+    setAlbumTitle("");
+
     toast.success("Album Added !", {
       position: toast.POSITION.TOP_RIGHT,
     });
-
-    setAlbumTitle("");
   };
 
   return (
