@@ -69,6 +69,7 @@ const AlbumContainer = () => {
           <form autoComplete="off" onSubmit={handleAddAlbum}>
             <input
               type="text"
+              value={albumTitle}
               onChange={(e) => setAlbumTitle(e.target.value)}
               placeholder="Add New Album..."
             />
